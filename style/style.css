@@ -1,0 +1,35 @@
+*::after,
+*::before,
+*
+{
+    /* reset */
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* boundaries */
+    background-color: #00000008;
+}
+
+/*################################
+ #             HTML 
+ ################################*/
+body{
+    min-height: 100dvh;
+}
+
+/*################################
+ #             MAIN 
+ ################################*/
+main{
+    height: 70dvh;
+    width: 100%;
+}
+
+/*################################
+ #             FOOTER
+ ################################*/
+#credits{
+    font-size: .8rem;
+    color: #0008;
+}
