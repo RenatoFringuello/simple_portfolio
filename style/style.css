@@ -7,29 +7,156 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    /* boundaries */
-    background-color: #00000008;
+
+    /* box */
+    background-color: #00000010;
+}
+
+:not(html, body, main)::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    background-clip: padding-box;  
+    
+}
+:not(html, body, main)::-webkit-scrollbar-thumb:hover {
+    background-color: grey;
+}
+:not(html, body, main)::-webkit-scrollbar {
+    width: 16px;
 }
 
 /*################################
  #             HTML 
  ################################*/
-body{
+html,body{
+    color: var(--accent-comp);
+    background-color: var(--accent);
     min-height: 100dvh;
+}
+
+/*################################
+ #             HEADER  
+ ################################*/
+main > header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .8rem;
+}
+
+/*################################
+ #             hero
+ ################################*/
+.hero{
+    width: 100%;
+    height: 95dvh;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    top: 0; left: 0;
+    /*animation: hero-idle 3s ease-in-out 2.5s infinite;*/
+}
+.hero::after{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: #0007;
+    z-index: 3;
+}
+.hero > img{
+    position: absolute;
+    display: block;
+    width: 100%;height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.hero > .description{
+    position: relative;
+    z-index: 4;
+    color: var(--accent);
+    padding : var(--xs) var(--xs) 15rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    justify-content: space-between;
 }
 
 /*################################
  #             MAIN 
  ################################*/
 main{
-    height: 70dvh;
-    width: 100%;
+    position: relative;
+    min-height: 3000px;
+    /* padding: 0 var(--xs) var(--xs); */
 }
+
+/*################################
+ #          cartellino
+ ################################*/
+.cartellino{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-size);
+    padding-bottom: calc(var(--gap-size) * 2);
+}
+.cartellino > .btn-wrapper{
+    font-size: clamp(3rem, 12dvw, 5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--s);
+}
+.cartellino > .btn-wrapper .btn{
+    width: clamp(120px, 20dvw, 190px);
+    text-align: center;
+}
+
+/*################################
+ #      storico-timbrature
+ ################################*/
+.storico-timbrature-wrapper{
+    flex-grow: 1;
+    width: clamp(300px, 70dvw, 700px);
+    background:  white !important;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0 7px 0 15px;
+}
+ul.storico-timbrature{
+    background: inherit;
+    padding: 15px 8px 15px 0 ; /*8 px per compensare con il padding del wrapper per far stare la barra scorrevole*/
+    overflow-y: auto;
+    height: 100vh;
+    max-height: 652.03px;
+    color: var(--accent);
+}
+ul.storico-timbrature > li.entrata{
+    background-color: #008600;
+}
+ul.storico-timbrature > li.uscita{
+    background: #b40000;
+}
+
 
 /*################################
  #             FOOTER
  ################################*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 #credits{
-    font-size: .8rem;
+    text-align: center;
+    font-size: var(--xs);
     color: #0008;
+    padding: var(--gap-size) 0;
 }

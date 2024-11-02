@@ -1,0 +1,48 @@
+:root{
+    /* solid colors */
+    --accent:#000;
+    --accent-comp:#fff;
+    --accent-soft:#333;
+    --accent-comp-soft:#ddd;
+
+    /* gradients */
+    --quepal-linear-gradient : linear-gradient(#11998e, #38ef7d);
+    --deep-space-linear-gradient : linear-gradient(#000000, #434343);
+    --gradient-bg:radial-gradient(
+        circle at 0% 0%,
+        rgb(0, 204, 255, 0.6),
+        rgba(0, 0, 255, 0) 30.71%
+    ),radial-gradient(
+        circle at 23.3% 75%,
+        rgb(255, 255, 255, 0.8),
+        rgba(255, 0, 230, 0) 50.71%
+    ), radial-gradient(
+        circle at 50% 85%,
+        rgba(0, 204, 255),
+        rgba(0, 0, 255, 0) 80.71%
+    ),radial-gradient(
+        circle at 8.3% 80%,
+        rgba(238, 0, 255),
+        rgba(112, 58, 107, 0) 105.71%
+    ),radial-gradient(
+        circle at 70% 80%,
+        rgba(255, 255, 255),
+        rgba(255, 0, 0, 0) 80%
+    ),radial-gradient(
+        circle at 20% 100%,
+        rgb(255, 255, 255),
+        rgba(255, 0, 0, 0) 60%
+    ), radial-gradient(
+        circle at 50% 0%,
+        rgba(255, 255, 255),
+        rgba(255, 0, 0, 0) 70%
+    ), radial-gradient(
+        circle at 80% 5%,
+        rgba(0, 204, 255),
+        rgba(0, 0, 255, 0) 20.71%
+    ),radial-gradient(
+        circle at 100% 100%,
+        rgba(238, 0, 255),
+        rgba(255, 0, 230, 0) 50.71%
+    );
+}

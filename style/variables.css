@@ -1,0 +1,18 @@
+:root{
+    /* sizes */
+    --xxs: .5rem;
+    --xs : .8rem;
+    --s  :  1rem;
+    --m  :  1.4rem;
+    --l  :  2rem;
+    --xl :  2.5rem;
+    --xxl:  3.2rem;
+
+    --gap-size:15px;
+
+    /* colors */
+    --accent        : #e3e3e3;
+    --accent-comp   : #3e3e3e;
+    --dominant      : #ff5100;
+    --dominant-dark : #d04301;
+}
