@@ -1,0 +1,61 @@
+/*        btn        */
+.my-btn{
+    background:none ;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: var(--xs) var(--m);
+    border: 4px solid #0000;
+    -webkit-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
+}
+/**
+    HOVER
+*/
+.my-btn:hover{
+    border: 4px solid;
+}
+.my-btn.btn-blur:hover{
+    box-shadow: 0 0 var(--blurcard-box-shadow-size) var(--blurcard-box-shadow-color);
+    backdrop-filter: blur(var(--blurcard-blur-size));
+    background-color: var(--blurcard-background-color);
+}
+
+
+/* text-gradient */
+.text-gradient{
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bg-text-gradient{
+    background: var(--accent-alpha-07);
+    -webkit-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
+}
+.bg-text-gradient-btn:hover{
+    background: var(--accent);
+}
+
+/* blurred card */
+.blur-card{
+    box-shadow: 0 0 var(--blurcard-box-shadow-size) var(--blurcard-box-shadow-color);
+    backdrop-filter: blur(var(--blurcard-blur-size));
+    background-color: var(--blurcard-background-color);
+}
+
+/* bg */
+.bg-accent-soft{
+    background-color: var(--accent-soft) !important;
+}
+.bg-accent-comp-soft{
+    background-color: var(--accent-comp-soft) !important;
+}
+
+/* text */
+.text-accent-soft{
+    color: var(--accent-soft) !important;
+}
+.text-accent-comp-soft{
+    color: var(--accent-comp-soft) !important;
+}

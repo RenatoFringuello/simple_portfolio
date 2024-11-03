@@ -1,3 +1,8 @@
+import * as U from './utils.js'
+
+/**
+ * change image for the HERO
+ */
 const header_img = document.querySelector('header .hero-img')
 const n_imgs = 2
 let i = 1

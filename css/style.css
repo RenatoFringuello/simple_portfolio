@@ -2,6 +2,9 @@
     background: var(--accent-comp);
     background-blend-mode: difference;
 }
+.my-btn::selection {
+    background: none;
+}
   
 body{
     overscroll-behavior-y: none;
@@ -16,7 +19,15 @@ body{
     align-items: center;
     width: 100%;
     padding: .8rem;
-    background-color: var(--accent-comp-soft);
+    background: var(--gradient-bg) /*var(--accent-soft)*/;
+    color: var(--accent);
+}
+.header-bar{
+    padding: .8rem;
+}
+.header-bar .my-btn{
+    font-weight: bold !important;
+    color:var(--accent);
 }
 
 #header{
@@ -24,7 +35,6 @@ body{
     min-height: 95dvh;
     height: 1px;/*importante per avere il 100% sui figli*/
     overflow: hidden;
-    cursor: pointer;
 }
 #header .hero-img{
     -webkit-transition: all ease-in-out 2s;
@@ -41,20 +51,30 @@ body{
 }
 #header .head .title{
     position: relative;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
-
-/* objects */
-.blur-card{
-    box-shadow: 0 0px 25px #68646433;
-    backdrop-filter: blur(7px);
-    background-color: #ffffff33;
-}
-
-/* fonts family */
+/*################################
+ #             fonts
+ ################################*/
 .mullish{
     font-family: 'Mulish', sans-serif;
+    font-optical-sizing: auto;
 }
 .kumar{
     font-family: "Kumar One", serif;
+}
+.rem{
+    font-family: "REM", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/*################################
+ #          Call2Actions  
+ ################################*/
+#contact-me{
+    background-image:var(--gradient-bg) ;
+}
+#projects{
 }
