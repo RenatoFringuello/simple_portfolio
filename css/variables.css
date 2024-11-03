@@ -19,15 +19,17 @@
     /* solid colors */
     --accent:#000;
     --accent-comp:#fff;
-    --accent-soft:#333;
+    --accent-soft:#222;
     --accent-comp-soft:#ddd;
+    /* alpha solid colors */
+    --accent-alpha-07:#000b;
 
     /* gradients */
     --quepal-linear-gradient : linear-gradient(#61a59f, #250075);
     --deep-space-linear-gradient : linear-gradient(#000000, #434343);
     --gradient-bg:radial-gradient(
         circle at 0% 0%,
-        #00ccff99,
+        #ff2a0099,
         #0000ff00 30.71%
     ),radial-gradient(
         circle at 23.3% 75%,
@@ -35,11 +37,11 @@
         #ff00e600 50.71%
     ), radial-gradient(
         circle at 50% 85%,
-        #00ccff,
+        #ff2a00,
         #0000ff00 80.71%
     ),radial-gradient(
         circle at 8.3% 80%,
-        #ee00ff,
+        #00ffbb,
         #703a6b00 105.71%
     ),radial-gradient(
         circle at 70% 80%,
@@ -55,11 +57,11 @@
         #ff000000 70%
     ), radial-gradient(
         circle at 80% 5%,
-        #00ccff,
+        #ff2a00,
         #0000ff00 20.71%
     ),radial-gradient(
         circle at 100% 100%,
-        #ee00ff,
+        #00ffbb,
         #ff00e600 50.71%
     );
 }
