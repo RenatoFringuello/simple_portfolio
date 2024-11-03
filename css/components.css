@@ -1,0 +1,20 @@
+/*        btn        */
+.my-btn{
+    background:none ;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: var(--xs) var(--m);
+    border: 2px solid #0000;
+    -webkit-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
+}
+.my-btn:hover{
+    border: 2px solid white;
+}
+.my-btn.btn-blur:hover{
+
+    box-shadow: 0 0 var(--blurcard-box-shadow-size) var(--blurcard-box-shadow-color);
+    backdrop-filter: blur(var(--blurcard-blur-size));
+    background-color: var(--blurcard-background-color);
+}

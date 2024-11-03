@@ -16,7 +16,14 @@ body{
     align-items: center;
     width: 100%;
     padding: .8rem;
-    background-color: var(--accent-comp-soft);
+    background-color: var(--accent-soft);
+    color: var(--accent-comp-soft);
+}
+.header-bar{
+    padding: .8rem;
+}
+.header-bar .my-btn{
+    font-weight: bold !important;
 }
 
 #header{
@@ -24,7 +31,6 @@ body{
     min-height: 95dvh;
     height: 1px;/*importante per avere il 100% sui figli*/
     overflow: hidden;
-    cursor: pointer;
 }
 #header .hero-img{
     -webkit-transition: all ease-in-out 2s;
@@ -44,17 +50,35 @@ body{
 }
 
 
-/* objects */
+/*################################
+ #             objects  
+ ################################*/
 .blur-card{
-    box-shadow: 0 0px 25px #68646433;
-    backdrop-filter: blur(7px);
-    background-color: #ffffff33;
+    box-shadow: 0 0 var(--blurcard-box-shadow-size) var(--blurcard-box-shadow-color);
+    backdrop-filter: blur(var(--blurcard-blur-size));
+    background-color: var(--blurcard-background-color);
+}
+.text-gradient{
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* fonts family */
+/*################################
+ #             fonts
+ ################################*/
 .mullish{
     font-family: 'Mulish', sans-serif;
 }
 .kumar{
     font-family: "Kumar One", serif;
+}
+
+/*################################
+ #          Call2Actions  
+ ################################*/
+#contact-me{
+    background-image:var(--gradient-bg) ;
+}
+#projects{
 }

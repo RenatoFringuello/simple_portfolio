@@ -1,4 +1,21 @@
 :root{
+    /* blur card */
+    --blurcard-box-shadow-size: 25px;
+    --blurcard-box-shadow-color: #68646433;
+    --blurcard-blur-size: 7px;
+    --blurcard-background-color: #ffffff33;
+
+    /* sizes */
+    --xxs: .5rem;
+    --xs : .8rem;
+    --s  :  1rem;
+    --m  :  1.4rem;
+    --l  :  2rem;
+    --xl :  2.5rem;
+    --xxl:  3.2rem;
+
+    --gap-size:15px;
+    
     /* solid colors */
     --accent:#000;
     --accent-comp:#fff;
@@ -6,43 +23,43 @@
     --accent-comp-soft:#ddd;
 
     /* gradients */
-    --quepal-linear-gradient : linear-gradient(#11998e, #38ef7d);
+    --quepal-linear-gradient : linear-gradient(#61a59f, #250075);
     --deep-space-linear-gradient : linear-gradient(#000000, #434343);
     --gradient-bg:radial-gradient(
         circle at 0% 0%,
-        rgb(0, 204, 255, 0.6),
-        rgba(0, 0, 255, 0) 30.71%
+        #00ccff99,
+        #0000ff00 30.71%
     ),radial-gradient(
         circle at 23.3% 75%,
-        rgb(255, 255, 255, 0.8),
-        rgba(255, 0, 230, 0) 50.71%
+        #ffffffcc,
+        #ff00e600 50.71%
     ), radial-gradient(
         circle at 50% 85%,
-        rgba(0, 204, 255),
-        rgba(0, 0, 255, 0) 80.71%
+        #00ccff,
+        #0000ff00 80.71%
     ),radial-gradient(
         circle at 8.3% 80%,
-        rgba(238, 0, 255),
-        rgba(112, 58, 107, 0) 105.71%
+        #ee00ff,
+        #703a6b00 105.71%
     ),radial-gradient(
         circle at 70% 80%,
-        rgba(255, 255, 255),
-        rgba(255, 0, 0, 0) 80%
+        #ffffff,
+        #ff000000 80%
     ),radial-gradient(
         circle at 20% 100%,
-        rgb(255, 255, 255),
-        rgba(255, 0, 0, 0) 60%
+        #ffffff,
+        #ff000000 60%
     ), radial-gradient(
         circle at 50% 0%,
-        rgba(255, 255, 255),
-        rgba(255, 0, 0, 0) 70%
+        #ffffff,
+        #ff000000 70%
     ), radial-gradient(
         circle at 80% 5%,
-        rgba(0, 204, 255),
-        rgba(0, 0, 255, 0) 20.71%
+        #00ccff,
+        #0000ff00 20.71%
     ),radial-gradient(
         circle at 100% 100%,
-        rgba(238, 0, 255),
-        rgba(255, 0, 230, 0) 50.71%
+        #ee00ff,
+        #ff00e600 50.71%
     );
 }

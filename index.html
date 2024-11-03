@@ -20,18 +20,20 @@
 
     <!-- main style -->
     <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="bg-black">
     <main>
         <header class="position-relative">
-            <!-- menu-bar -->
-            <div id="menu-bar">
+            <!-- menu-bar fixed -->
+            <div id="menu-bar" class="header-bar">
                 <div class="logo">RF</div>
                 <div class="menu">
-                    <button class="btn">Projects</button>
-                    <button class="btn">Contact Me</button>
+                    <button id="projects" class="my-btn">Projects</button>
+                    <!-- il secondo btn serve per lo spazio -->
+                    <button class="my-btn invisible">Contact Me</button>
                 </div>
             </div>
             <!-- hero -->
@@ -39,6 +41,7 @@
 
                 <div class="hero-img position-absolute"></div>
                 <div class="block p-5 h-100">
+                    <!-- contact me fixed btn -->
                     <div class="head pt-5 position-relative h-100">
                         <div class="blur-card p-3">
                             <h1 class="title kumar m-0 text-center">Hi my name is Renato Fringuello and I am a Fullstack Developer</h1>
@@ -48,6 +51,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="header-bar position-fixed top-0 end-0">
+                <button id="contact-me" class="my-btn text-gradient">Contact Me</button>
             </div>
         </header>
         <section>
