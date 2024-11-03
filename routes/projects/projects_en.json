@@ -11,12 +11,12 @@
         "description":"Passatempo",
         "links":[
             {
-                "link_name":"github",
-                "link": "https://github.com/RenatoFringuello/advent_calendar.git"
+                "name":"github",
+                "href": "https://github.com/RenatoFringuello/advent_calendar.git"
             },
             {
-                "link_name":"webpage",
-                "link": "https://advent.renatofringuello.com"
+                "name":"webpage",
+                "href": "https://advent.renatofringuello.com"
             }
         ]
     }
