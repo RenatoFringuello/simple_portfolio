@@ -1,4 +1,9 @@
 :root{
+
+    /* animation variables */
+    --bounce-floor:98dvh;
+    --bounce-air:95dvh;
+
     /* blur card */
     --blurcard-box-shadow-size: 25px;
     --blurcard-box-shadow-color: #68646433;

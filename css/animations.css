@@ -9,29 +9,29 @@
 }
 @-webkit-keyframes bounce {
     0% {
-        height: 98dvh;
+        height: var(--bounce-floor);
     }
     20% {
-        height: 95dvh;
+        height: var(--bounce-air);
     }
     75% {
-        height: 98dvh;
+        height: var(--bounce-floor);
     }
     100% {
-        height: 98dvh;
+        height: var(--bounce-floor);
     }
 }
 @keyframes bounce {
     0% {
-        height: 98dvh;
+        height: var(--bounce-floor);
     }
     20% {
-        height: 95dvh;
+        height: var(--bounce-air);
     }
     75% {
-        height: 98dvh;
+        height: var(--bounce-floor);
     }
     100% {
-        height: 98dvh;
+        height: var(--bounce-floor);
     }
 }

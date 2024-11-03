@@ -45,6 +45,9 @@
 }
 
 /* bg */
+.bg-gradient{
+    background-image: var(--gradient-bg) !important;
+}
 .bg-accent-soft{
     background-color: var(--accent-soft) !important;
 }
