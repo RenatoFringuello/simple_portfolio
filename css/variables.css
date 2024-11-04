@@ -1,9 +1,14 @@
 :root{
+
+    /* animation variables */
+    --bounce-floor:98dvh;
+    --bounce-air:95dvh;
+
     /* blur card */
     --blurcard-box-shadow-size: 25px;
     --blurcard-box-shadow-color: #68646433;
     --blurcard-blur-size: 7px;
-    --blurcard-background-color: #ffffff33;
+    --blurcard-background-color: var(--accent-comp)33;
 
     /* sizes */
     --xxs: .5rem;
@@ -21,47 +26,50 @@
     --accent-comp:#fff;
     --accent-soft:#222;
     --accent-comp-soft:#ddd;
+    --primary:#ff2a00;
+    --secondary:#00ffbb;
     /* alpha solid colors */
     --accent-alpha-07:#000b;
+    --primary-alpha-99:#ff2a0099;
 
     /* gradients */
     --quepal-linear-gradient : linear-gradient(#61a59f, #250075);
     --deep-space-linear-gradient : linear-gradient(#000000, #434343);
     --gradient-bg:radial-gradient(
         circle at 0% 0%,
-        #ff2a0099,
-        #0000ff00 30.71%
+        var(--primary-alpha-99),
+        #0000 30.71%
     ),radial-gradient(
         circle at 23.3% 75%,
         #ffffffcc,
-        #ff00e600 50.71%
+        #0000 50.71%
     ), radial-gradient(
         circle at 50% 85%,
-        #ff2a00,
-        #0000ff00 80.71%
+        var(--primary),
+        #0000 80.71%
     ),radial-gradient(
         circle at 8.3% 80%,
-        #00ffbb,
-        #703a6b00 105.71%
+        var(--secondary),
+        #0000 105.71%
     ),radial-gradient(
         circle at 70% 80%,
-        #ffffff,
-        #ff000000 80%
+        var(--accent-comp),
+        #0000 80%
     ),radial-gradient(
         circle at 20% 100%,
-        #ffffff,
-        #ff000000 60%
+        var(--accent-comp),
+        #0000 60%
     ), radial-gradient(
         circle at 50% 0%,
-        #ffffff,
-        #ff000000 70%
+        var(--accent-comp),
+        #0000 70%
     ), radial-gradient(
         circle at 80% 5%,
-        #ff2a00,
-        #0000ff00 20.71%
+        var(--primary),
+        #0000 20.71%
     ),radial-gradient(
         circle at 100% 100%,
-        #00ffbb,
-        #ff00e600 50.71%
+        var(--secondary),
+        #0000 50.71%
     );
 }

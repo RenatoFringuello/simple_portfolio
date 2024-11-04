@@ -21,6 +21,26 @@
     background-color: var(--blurcard-background-color);
 }
 
+/* links */
+.my-card-link{
+    position: relative;
+    margin-right: 15px;
+    color: var(--primary);
+}
+.my-card-link::before{
+    content: '';
+    position: absolute;
+    top:2px;left: 100%;
+    border: 1.5px solid;
+    border-bottom: 1px;
+    border-left: 1px;
+    height: 5px;
+    aspect-ratio: 1/1;
+}
+.my-card-link:hover.my-card-link::before{
+    content: '';
+    top:0px;left: 100%;
+}
 
 /* text-gradient */
 .text-gradient{
@@ -45,6 +65,9 @@
 }
 
 /* bg */
+.bg-gradient{
+    background-image: var(--gradient-bg) !important;
+}
 .bg-accent-soft{
     background-color: var(--accent-soft) !important;
 }

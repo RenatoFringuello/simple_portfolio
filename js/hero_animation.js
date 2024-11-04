@@ -26,6 +26,7 @@ document.addEventListener("scroll", (event) => {
              */
             if(last_position > scrollMax){
                 last_animation_play = true
+                document.documentElement.style.setProperty('--bounce-floor', '100dvh');
                 
                 //rimuovo il set interval
                 if(is_running){
@@ -43,6 +44,7 @@ document.addEventListener("scroll", (event) => {
                 // va lasciato qui perché il secondo listener non può reimpostare a infinite se non ci sono iterazioni
                 // nell'animazion
                 header.style.animationIterationCount = 'infinite';
+                document.documentElement.style.setProperty('--bounce-floor', '98dvh');
                 last_animation_play = false
                 
                 if(!is_running){

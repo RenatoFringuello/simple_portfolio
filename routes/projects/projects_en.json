@@ -1,0 +1,25 @@
+[
+    {
+        "title":"SmartValidation",
+        "subtitle":"Backend",
+        "description":"In questo progetto ho sviluppato delle regole di validazione con JAVA",
+        "thumbnail": "http://127.0.0.1:5500/assets/img/halftone_background.jpg",
+        "links":[]
+    },
+    {
+        "title":"Advent Calendar",
+        "subtitle":"Fullstack",
+        "description":"Passatempo",
+        "thumbnail": "http://127.0.0.1:5500/assets/img/pattern_arab.jpg",
+        "links":[
+            {
+                "name":"github",
+                "href": "https://github.com/RenatoFringuello/advent_calendar.git"
+            },
+            {
+                "name":"webpage",
+                "href": "https://advent.renatofringuello.com"
+            }
+        ]
+    }
+]
